@@ -26,6 +26,9 @@ Extract dataset_coco.json from the zip file and copy it in to ./data/. Then do:
 And put "ciderD_token.py" and "ciderD_scorer_token4.py" in the "cider/pyciderevalcap/ciderD/", then
 - python scripts/prepro_ngrams.py --input_json data/dataset_coco.json --dict_json data/cocotalk.json --output_pkl data/coco-train --split train
 
+## Prepare for CSGD training ##
+- Download mscoco_knnlabel.h5 from: https://drive.google.com/open?id=1IFkqZuo3Yh2ywwwcdwVMiJKhWT9rWjvz And put it in the "data/"
+
 ## Start training ##
 ### Training using MLE criterion in the initial 20 epochs ###
 - python MLE_trainpro.py --id TDA --caption_model TDA --checkpoint_path RL_TDA
