@@ -32,7 +32,7 @@ And put "ciderD_token.py" and "ciderD_scorer_token4.py" in the "cider/pycidereva
 
 ### Training by CS-GD ###
 - python CSGD_trainpro.py --id TDA --caption_model TDA --checkpoint_path RL_TDA
-- We have provided the pre-trained TDA model (download from: , unzip and placed in .RL_TDA/CSGD)
+- We have provided the pre-trained TDA model (download from:https://drive.google.com/open?id=1OVPY1xvCiNQVZpVsMqz4S6-r--q-Bemq , unzip and placed in .RL_TDA/CSGD)
 
 ### Eval ###
 - python evalpro.py --caption_model TDA --checkpoint_path RL_TDA
