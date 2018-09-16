@@ -7,9 +7,7 @@ Requirements:
 - Torchvision
 - coco-caption (download from: https://github.com/tylin/coco-caption, and place in the root directory)
 - Pre-trained Resnet101 model (download from: https://drive.google.com/drive/folders/0B7fNdx_jAqhtbVYzOURMdDNHSGM, and should be placed in data/imagenet_weights/)
-
-- Pre-trained VSE++ model (download from: , and placed in ./vse/)
-
+- Pre-trained VSE++ model (download from:https://drive.google.com/open?id=1D0Bz5LN6-M4FjH4TAaLeOLkP-D7KkXYe, and placed in ./vse/)
 
 ### Download MSCOCO dataset ###
  Download the coco images from http://cocodataset.org/#download. Download 2014 Train images and 2014 Val images, and put them into the train2014/ and val2014/ in the ./image.
