@@ -1,5 +1,5 @@
 # Concrete-Image-Captioning.Pytorch
-The pytorch implementation on Concrete Image Captioning by Integrating Content Sensitive and Global Discriminative Objective
+The pytorch implementation for "Concrete Image Captioning by Integrating Content Sensitive and Global Discriminative Objective"
 
 ## Requirements: ##
 - Python 2.7
