@@ -1,7 +1,7 @@
 # Concrete-Image-Captioning.Pytorch
 The pytorch implementation on Concrete Image Captioning by Integrating Content Sensitive and Global Discriminative Objective
 
-Requirements:
+### Requirements: ###
 - Python 2.7
 - PyTorch 0.2
 - Torchvision
@@ -10,7 +10,7 @@ Requirements:
 - Pre-trained VSE++ model (download from:https://drive.google.com/open?id=1D0Bz5LN6-M4FjH4TAaLeOLkP-D7KkXYe, and placed in ./vse/)
 
 ### Download MSCOCO dataset ###
- Download the coco images from http://cocodataset.org/#download. Download 2014 Train images and 2014 Val images, and put them into the train2014/ and val2014/ in the ./image.
+- Download the coco images from http://cocodataset.org/#download. Download 2014 Train images and 2014 Val images, and put them into the train2014/ and val2014/ in the ./image.
 Download 2014 Test images, and put them into the test2014/
 
 ### Download COCO captions and preprocess them ###
@@ -28,19 +28,18 @@ And put "ciderD_token.py" and "ciderD_scorer_token4.py" in the "cider/pycidereva
 
 
 ### Start training ###
+## Training using MLE criterion in the initial 20 epochs ##
+- python MLE_trainpro.py --id TDA --caption_model TDA --checkpoint_path RL_TDA
 
-### Training using MLE criterion in the initial 20 epochs ###
-python MLE_trainpro.py --id TDA --caption_model TDA --checkpoint_path RL_TDA
-
-### Training by CS-GD ###
-python CSGD_trainpro.py --id TDA --caption_model TDA --checkpoint_path RL_TDA
+## Training by CS-GD ##
+- python CSGD_trainpro.py --id TDA --caption_model TDA --checkpoint_path RL_TDA
 
 ### Eval ###
-python evalpro.py --caption_model TDA --checkpoint_path RL_TDA
+- python evalpro.py --caption_model TDA --checkpoint_path RL_TDA
 
-### Self-retrieval Experiment ###
-python generate_random_5000.py  --caption_model TDA --checkpoint_path RL_TDA
-python self_retrieval.py --id TDA --caption_model TDA --checkpoint_path RL_TDA
+## Self-retrieval Experiment ##
+- python generate_random_5000.py  --caption_model TDA --checkpoint_path RL_TDA
+- python self_retrieval.py --id TDA --caption_model TDA --checkpoint_path RL_TDA
 
 
 Pre-trained TDA model (download from: , and placed in .RL_TDA/CSGD)
