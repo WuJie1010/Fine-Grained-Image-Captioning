@@ -12,24 +12,21 @@ Requirements:
 
 
 ### Download MSCOCO dataset ###
-Download the coco images from http://cocodataset.org/#download. Download 2014 Train images and 2014 Val images, and put them into the train2014/ and val2014/ in the ./image.
+ Download the coco images from http://cocodataset.org/#download. Download 2014 Train images and 2014 Val images, and put them into the train2014/ and val2014/ in the ./image.
 Download 2014 Test images, and put them into the test2014/
 
 ### Download COCO captions and preprocess them ###
-Download Karpathy's split for coco captions from http://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip .
-Extract dataset_coco.json from the zip file and copy it in to ./data/.
-
-Then do:
-python scripts/prepro_labels.py --input_json data/dataset_coco.json --output_json data/cocotalk.json --output_h5 data/cocotalk
+- Download Karpathy's split for coco captions from http://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip .
+Extract dataset_coco.json from the zip file and copy it in to ./data/. Then do:
+- python scripts/prepro_labels.py --input_json data/dataset_coco.json --output_json data/cocotalk.json --output_h5 data/cocotalk
 
 ### Pre-extract the image features ###
-python scripts/prepro_feats.py --input_json data/dataset_coco.json --images_root image
+- python scripts/prepro_feats.py --input_json data/dataset_coco.json --images_root image
 
 ### Prepare for Reinforcement Learning ###
-Download Cider from: https://github.com/vrama91/cider
-And put "ciderD_token.py" and "ciderD_scorer_token4.py" in the "cider/pyciderevalcap/ciderD/"
-
-python scripts/prepro_ngrams.py --input_json data/dataset_coco.json --dict_json data/cocotalk.json --output_pkl data/coco-train --split train
+- Download Cider from: https://github.com/vrama91/cider
+And put "ciderD_token.py" and "ciderD_scorer_token4.py" in the "cider/pyciderevalcap/ciderD/", then
+- python scripts/prepro_ngrams.py --input_json data/dataset_coco.json --dict_json data/cocotalk.json --output_pkl data/coco-train --split train
 
 
 ### Start training ###
