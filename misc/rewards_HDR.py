@@ -1,5 +1,5 @@
 """
-Holistic Discriminative Reward
+Global Discriminative Reward
 """
 
 from __future__ import absolute_import
