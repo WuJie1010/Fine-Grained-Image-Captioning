@@ -1,5 +1,5 @@
 """
-Training Captioning Model by Integrating Content Sensitive and Global Discriminative Objective
+Training Captioning Model by Integrating Local and Global Discriminative Objective
 """
 
 from __future__ import absolute_import
