@@ -1,5 +1,5 @@
 """
-Content Sensitive Reward
+Local Discriminative Reward
 """
 
 from __future__ import absolute_import
