@@ -1,4 +1,4 @@
-# Concrete-Image-Captioning
+# Fine-Grained-Image-Captioning
 The pytorch implementation for "Fine-Grained Image Captioning with Global-Local Discriminative Objective"
 
 ## Requirements: ##
